@@ -1,0 +1,197 @@
+-
+    let services = {
+        typography: {
+            img: "assets/images/letterA.svg",
+            alt: "Clean Typography",
+            title: "CLEAN TYPOGRAPHY",
+            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.",
+        },
+        code: {
+            img: "assets/images/arrows.svg",
+            alt: "Rock Solid Code",
+            title: "ROCK SOLID CODE",
+            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.",
+        },
+        support: {
+            img: "assets/images/redBall.svg",
+            alt: "Expert Support",
+            title: "EXPERT SUPPORT",
+            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.",
+        },
+    }
+
+mixin info(oneSection)
+    section 
+        picture 
+            img(src=oneSection.img, alt=oneSection.alt)
+        h3 #{oneSection.title}
+        p #{oneSection.description}
+
+-
+    let men = {
+        man1: {
+            img: "assets/images/man1.png",
+            alt: "Md. Khalil Uddin",
+            name: "Md. Khalil Uddin",
+            description: "Head of Ideas",
+        },
+        man2: {
+            img: "assets/images/man2.png",
+            alt: "Rubel Miah",
+            name: "Rubel Miah",
+            description: "Lead WordPress Developer",
+        },
+        man3: {
+            img: "assets/images/man3.png",
+            alt: "Shamim Mia",
+            name: "Shamim Mia",
+            description: "Sr. Web Developer",
+        },
+        man4: {
+            img: "assets/images/man4.png",
+            alt: "John Doe",
+            name: "John Doe",
+            description: "Front-end Developer",
+        },
+    }
+
+mixin 4men(oneMan, order="man1")
+    div(class=order)
+        picture 
+            img(src=oneMan.img, alt=oneMan.alt)
+        p.name #{oneMan.name}
+        p.work #{oneMan.description}
+
+-
+    let projects = {
+        hairDresser: {
+            img: "assets/images/hairDresser.png",
+            caption: "hairDresser",
+        },
+        pigeon: {
+            img: "assets/images/pigeon.png",
+            caption: "pigeon",
+        },
+        digitalLife: {
+            img: "assets/images/digitalLife.png",
+            caption: "digitalLife",
+        },
+        photography: {
+            img: "assets/images/photography.png",
+            caption: "photography",
+        },
+        cycling: {
+            img: "assets/images/cycling.png",
+            caption: "cycling",
+        },
+        creativity: {
+            img: "assets/images/creativity.png",
+            caption: "creativity",
+        },
+        workspace: {
+            img: "assets/images/workspace.png",
+            caption: "workspace",
+        },
+        dreamCreate: {
+            img: "assets/images/dreamCreate.png",
+            caption: "dreamCreate",
+        },
+        entertainment: {
+            img: "assets/images/entertainment.png",
+            caption: "entertainment",
+        },
+    }
+
+mixin project(oneProject, picture="num1", block="red1")
+    div(class=picture)
+        div.redBackground.none(class=block)
+        p.none(class=block) #{oneProject.caption}
+        p.none(class=block) Branding
+        div.none(class=block)
+            a(href="#") VIEW
+            span.chevron
+        picture 
+            img(src=oneProject.img, alt=oneProject.title)
+        
+-
+    let cards = {
+        ideas: {
+            img: "assets/images/startup.png",
+            alt: "Startup ideas needs to be funded",
+            left: "18",
+            title: "Startup ideas needs to be funded",
+            author1: "By",
+            author2: "Khalil",
+            author3: "Uddin in",
+            author4: "Development",
+            description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam",
+            href: "#",
+            space: " ",
+        },
+        design: {
+            img: "assets/images/design.png",
+            alt: "User Interface Designing Elements",
+            left: "18",
+            title: "User Interface Designing Elements",
+            author1: "By",
+            author2: "Khalil",
+            author3: "Uddin in",
+            author4: "Development",
+            description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor idunt ut labore et dolore aliquyam",
+            href: "#",
+            space: " ",
+        },
+    }
+
+mixin post(oneCard, number="blog1")
+    div.blog(class=number)
+        picture 
+            img(src=oneCard.img, alt=oneCard.alt)
+        section 
+            .location 
+                div.left
+                    p.num #{oneCard.left}
+                    p ОСТ
+                div 
+                    h3 #{oneCard.title}
+                    p.author 
+                        | #{oneCard.author1} #{oneCard.space}
+                        span #{oneCard.author2} #{oneCard.space}
+                        | #{oneCard.author3} #{oneCard.space}
+                        span #{oneCard.author4}
+            p.post_des #{oneCard.description}
+            a.read(href=oneCard.href) READ MORE
+
+-
+    let touch = {
+        address: {
+            img: "assets/images/address.svg",
+            alt: "address",
+            title: "ADDRESS",
+            text1: "312, 7th Ave, New York",
+            text2: "NY 101200, United States of America",
+        },
+        hotline: {
+            img: "assets/images/hotline.svg",
+            alt: "hotline",
+            title: "Hotline (24x7)",
+            text1: "+65 0052 300, +65 88251 210",
+            text2: "+88 01723 511 340",
+        },
+        eMail: {
+            img: "assets/images/eMail.svg",
+            alt: "E-mail",
+            title: "E-mail",
+            text1: "shapedtheme@gmail.com",
+            text2: "khalilkode@gmail.com",
+        },
+    }
+
+mixin application(oneBlock, mainClass="adress", secondClass="where")
+    div(class=mainClass)
+        img(src=oneBlock.img, alt=oneBlock.alt)
+        div(class=secondClass)
+            h3 #{oneBlock.title} 
+            p #{oneBlock.text1}
+            p #{oneBlock.text2}
+
