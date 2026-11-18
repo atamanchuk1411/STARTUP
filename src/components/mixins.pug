@@ -20,8 +20,8 @@
         },
     }
 
-mixin info(oneSection)
-    section 
+mixin info(oneSection, mainClass="typography")
+    section(class=mainClass)
         picture 
             img(src=oneSection.img, alt=oneSection.alt)
         h3 #{oneSection.title}
@@ -34,31 +34,55 @@ mixin info(oneSection)
             alt: "Md. Khalil Uddin",
             name: "Md. Khalil Uddin",
             description: "Head of Ideas",
+            herfF: "#",
+            herfT: "#",
+            herfG: "#",
+            herfI: "#",
         },
         man2: {
             img: "assets/images/man2.png",
             alt: "Rubel Miah",
             name: "Rubel Miah",
             description: "Lead WordPress Developer",
+            herfF: "#",
+            herfT: "#",
+            herfG: "#",
+            herfI: "#",
         },
         man3: {
             img: "assets/images/man3.png",
             alt: "Shamim Mia",
             name: "Shamim Mia",
             description: "Sr. Web Developer",
+            herfF: "#",
+            herfT: "#",
+            herfG: "#",
+            herfI: "#",
         },
         man4: {
             img: "assets/images/man4.png",
             alt: "John Doe",
             name: "John Doe",
             description: "Front-end Developer",
+            herfF: "#",
+            herfT: "#",
+            herfG: "#",
+            herfI: "#",
         },
     }
 
 mixin 4men(oneMan, order="man1")
     div(class=order)
-        picture 
+        picture.d-block
             img(src=oneMan.img, alt=oneMan.alt)
+        a.facebook(href=oneMan.hrefF) 
+            img(src="../assets/images/facebook.svg", alt="")
+        a.twitter(href=oneMan.hrefT) 
+            img(src="../assets/images/twitter.svg", alt="")
+        a.google(href=oneMan.hrefG) 
+            img(src="../assets/images/google.svg", alt="")
+        a.in(href=oneMan.hrefI) 
+            img(src="../assets/images/in.svg", alt="")
         p.name #{oneMan.name}
         p.work #{oneMan.description}
 
@@ -66,50 +90,68 @@ mixin 4men(oneMan, order="man1")
     let projects = {
         hairDresser: {
             img: "assets/images/hairDresser.png",
-            caption: "hairDresser",
+            caption: "Hair Dresser",
+            type: "Branding",
+            href: "#",
         },
         pigeon: {
             img: "assets/images/pigeon.png",
-            caption: "pigeon",
+            caption: "Pigeon",
+            type: "Branding",
+            href: "#",
         },
         digitalLife: {
             img: "assets/images/digitalLife.png",
-            caption: "digitalLife",
+            caption: "Digital Life",
+            type: "Branding",
+            href: "#",
         },
         photography: {
             img: "assets/images/photography.png",
-            caption: "photography",
+            caption: "Photography",
+            type: "Design",
+            href: "#",
         },
         cycling: {
             img: "assets/images/cycling.png",
-            caption: "cycling",
+            caption: "Cycling",
+            type: "Design",
+            href: "#",
         },
         creativity: {
             img: "assets/images/creativity.png",
-            caption: "creativity",
+            caption: "Creativity",
+            type: "Development",
+            href: "#",
         },
         workspace: {
             img: "assets/images/workspace.png",
-            caption: "workspace",
+            caption: "Workspace",
+            type: "Development",
+            href: "#",
         },
         dreamCreate: {
             img: "assets/images/dreamCreate.png",
-            caption: "dreamCreate",
+            caption: "Dream Create",
+            type: "Strategy",
+            href: "#",
         },
         entertainment: {
             img: "assets/images/entertainment.png",
-            caption: "entertainment",
+            caption: "Entertainment",
+            type: "Strategy",
+            href: "#",
         },
     }
 
-mixin project(oneProject, picture="num1", block="red1")
-    div(class=picture)
-        div.redBackground.none(class=block)
-        p.none(class=block) #{oneProject.caption}
-        p.none(class=block) Branding
-        div.none(class=block)
-            a(href="#") VIEW
-            span.chevron
+mixin project(oneProject)
+    div.picture
+        div.red
+        p.caption #{oneProject.caption}
+        p.type #{oneProject.type}
+        a.view(href=oneProject.href)
+            p VIEW
+            span
         picture 
             img(src=oneProject.img, alt=oneProject.title)
         
@@ -187,10 +229,10 @@ mixin post(oneCard, number="blog1")
         },
     }
 
-mixin application(oneBlock, mainClass="adress", secondClass="where")
-    div(class=mainClass)
-        img(src=oneBlock.img, alt=oneBlock.alt)
-        div(class=secondClass)
+mixin application(oneBlock, pad="isnt")
+    .info
+        img(class=pad src=oneBlock.img, alt=oneBlock.alt)
+        div.extra
             h3 #{oneBlock.title} 
             p #{oneBlock.text1}
             p #{oneBlock.text2}

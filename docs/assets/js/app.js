@@ -1,1 +1,1 @@
-
+const c=document.querySelector("#black"),s=document.querySelector(".open"),o=document.querySelector(".cancel_popup"),t=document.querySelector(".menu");s.addEventListener("click",function(e){e.preventDefault(),c.classList.add("di-block"),t.classList.add("di-block"),o.classList.add("di-block"),console.log("+")});function l(e){e.preventDefault(),c.classList.remove("di-block"),t.classList.remove("di-block"),o.classList.remove("di-block")}o.addEventListener("click",l);c.addEventListener("click",l);
