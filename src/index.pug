@@ -58,7 +58,7 @@ html(lang="uk")
                         +4men(men.man2, "man2")
                         +4men(men.man3, "man3")
                         +4men(men.man4, "man4")
-            .works 
+            .works.wrapper
                 h2 LATEST WORKS
                 span.grey_line
                 ul 
@@ -72,7 +72,7 @@ html(lang="uk")
                         a Development
                     li 
                         a Strategy
-                .examples 
+                .examples
                     +project(projects.hairDresser)
                     +project(projects.pigeon)
                     +project(projects.digitalLife)
@@ -97,7 +97,7 @@ html(lang="uk")
                         +post(cards.ideas)
                         +post(cards.design, "blog2")
             .fonts
-                .pictures
+                .pictures.wrapper
                     img(class="img1" src="assets/images/deorham.svg", alt="")
                     img(class="img2" src="assets/images/ratings.svg", alt="")
                     img(class="img3" src="assets/images/malik.svg", alt="")
@@ -107,10 +107,11 @@ html(lang="uk")
                 p.it.wrapper Temporibus autem quibusdam et aut officiis debitis aut rerum”
                 p.author.wrapper John Doe, Google Inc.
             .connect.wrapper 
-                h2 GET IN TOUCH
-                span.grey_line
-                p.des Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet
-                .wrapper.flex
+                .a-items
+                    h2 GET IN TOUCH
+                    span.grey_line
+                    p.des Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet
+                .flex
                     .information
                         +application(touch.address)
                         +application(touch.hotline)
@@ -129,23 +130,27 @@ html(lang="uk")
                                 span.star.red *  
                                 | We’ll contact you as as possible. We don’t reply on Monday.
         footer 
-            .images   
-                svg.svg1(xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 35 35" width="35" height="35")
-                    style .a1{fill:none;stroke:#fff;stroke-miterlimit:100;stroke-width:2}
-                    path(fill-rule="evenodd" class="a1" d="m17.5 0c9.7 0 17.5 7.8 17.5 17.5 0 9.7-7.8 17.5-17.5 17.5-9.7 0-17.5-7.8-17.5-17.5 0-9.7 7.8-17.5 17.5-17.5z")
-                    path(class="b1" d="m26 12.4q-0.9 0.4-1.9 0.5c0.7-0.4 1.2-1 1.5-1.7q-1 0.6-2.1 0.8c-0.6-0.6-1.5-1-2.4-1-1.8 0-3.3 1.4-3.3 3q0 0.4 0.1 0.7c-2.7-0.1-5.2-1.3-6.8-3.1q-0.4 0.6-0.4 1.5c0 1 0.5 2 1.4 2.5q-0.8 0-1.5-0.4 0 0 0 0.1c0 1.4 1.2 2.6 2.7 2.9q-0.4 0.1-0.9 0.1-0.3 0-0.6 0c0.4 1.2 1.6 2.1 3.1 2.1-1.2 0.8-2.6 1.3-4.1 1.3q-0.4 0-0.8-0.1c1.5 0.9 3.2 1.4 5 1.4 6.1 0 9.4-4.6 9.4-8.6q0-0.2 0-0.4 0.9-0.7 1.6-1.6z")
-                svg.svg2(xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 35 35" width="35" height="35")
-                    style .a2{fill:none;stroke:#fff;stroke-miterlimit:100;stroke-width:2}
-                    path(fill-rule="evenodd" class="a2" d="m17.5 0c9.7 0 17.5 7.8 17.5 17.5 0 9.7-7.8 17.5-17.5 17.5-9.7 0-17.5-7.8-17.5-17.5 0-9.7 7.8-17.5 17.5-17.5z")
-                    path(class="b2" d="m26 12.4q-0.9 0.4-1.9 0.5c0.7-0.4 1.2-1 1.5-1.7q-1 0.6-2.1 0.8c-0.6-0.6-1.5-1-2.4-1-1.8 0-3.3 1.4-3.3 3q0 0.4 0.1 0.7c-2.7-0.1-5.2-1.3-6.8-3.1q-0.4 0.6-0.4 1.5c0 1 0.5 2 1.4 2.5q-0.8 0-1.5-0.4 0 0 0 0.1c0 1.4 1.2 2.6 2.7 2.9q-0.4 0.1-0.9 0.1-0.3 0-0.6 0c0.4 1.2 1.6 2.1 3.1 2.1-1.2 0.8-2.6 1.3-4.1 1.3q-0.4 0-0.8-0.1c1.5 0.9 3.2 1.4 5 1.4 6.1 0 9.4-4.6 9.4-8.6q0-0.2 0-0.4 0.9-0.7 1.6-1.6z")       
-                svg.svg3(xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 35 35" width="35" height="35")
-                    style .a3{fill:none;stroke:#fff;stroke-miterlimit:100;stroke-width:2}
-                    path(fill-rule="evenodd" class="a3" d="m17.5 0c9.7 0 17.5 7.8 17.5 17.5 0 9.7-7.8 17.5-17.5 17.5-9.7 0-17.5-7.8-17.5-17.5 0-9.7 7.8-17.5 17.5-17.5z")
-                    path(class="b3" d="m26 12.4q-0.9 0.4-1.9 0.5c0.7-0.4 1.2-1 1.5-1.7q-1 0.6-2.1 0.8c-0.6-0.6-1.5-1-2.4-1-1.8 0-3.3 1.4-3.3 3q0 0.4 0.1 0.7c-2.7-0.1-5.2-1.3-6.8-3.1q-0.4 0.6-0.4 1.5c0 1 0.5 2 1.4 2.5q-0.8 0-1.5-0.4 0 0 0 0.1c0 1.4 1.2 2.6 2.7 2.9q-0.4 0.1-0.9 0.1-0.3 0-0.6 0c0.4 1.2 1.6 2.1 3.1 2.1-1.2 0.8-2.6 1.3-4.1 1.3q-0.4 0-0.8-0.1c1.5 0.9 3.2 1.4 5 1.4 6.1 0 9.4-4.6 9.4-8.6q0-0.2 0-0.4 0.9-0.7 1.6-1.6z")       
-                svg.svg4(xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 35 35" width="35" height="35")
-                    style .a4{fill:none;stroke:#fff;stroke-miterlimit:100;stroke-width:2}
-                    path(fill-rule="evenodd" class="a4" d="m17.5 0c9.7 0 17.5 7.8 17.5 17.5 0 9.7-7.8 17.5-17.5 17.5-9.7 0-17.5-7.8-17.5-17.5 0-9.7 7.8-17.5 17.5-17.5z")
-                    path(class="b4" d="m26 12.4q-0.9 0.4-1.9 0.5c0.7-0.4 1.2-1 1.5-1.7q-1 0.6-2.1 0.8c-0.6-0.6-1.5-1-2.4-1-1.8 0-3.3 1.4-3.3 3q0 0.4 0.1 0.7c-2.7-0.1-5.2-1.3-6.8-3.1q-0.4 0.6-0.4 1.5c0 1 0.5 2 1.4 2.5q-0.8 0-1.5-0.4 0 0 0 0.1c0 1.4 1.2 2.6 2.7 2.9q-0.4 0.1-0.9 0.1-0.3 0-0.6 0c0.4 1.2 1.6 2.1 3.1 2.1-1.2 0.8-2.6 1.3-4.1 1.3q-0.4 0-0.8-0.1c1.5 0.9 3.2 1.4 5 1.4 6.1 0 9.4-4.6 9.4-8.6q0-0.2 0-0.4 0.9-0.7 1.6-1.6z")              
+            .images 
+                a  
+                    svg.svg1(xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 35 35" width="35" height="35")
+                        style .a1{fill:none;stroke:#fff;stroke-miterlimit:100;stroke-width:2}
+                        path(fill-rule="evenodd" class="a1" d="m17.5 0c9.7 0 17.5 7.8 17.5 17.5 0 9.7-7.8 17.5-17.5 17.5-9.7 0-17.5-7.8-17.5-17.5 0-9.7 7.8-17.5 17.5-17.5z")
+                        path(class="b1" d="m26 12.4q-0.9 0.4-1.9 0.5c0.7-0.4 1.2-1 1.5-1.7q-1 0.6-2.1 0.8c-0.6-0.6-1.5-1-2.4-1-1.8 0-3.3 1.4-3.3 3q0 0.4 0.1 0.7c-2.7-0.1-5.2-1.3-6.8-3.1q-0.4 0.6-0.4 1.5c0 1 0.5 2 1.4 2.5q-0.8 0-1.5-0.4 0 0 0 0.1c0 1.4 1.2 2.6 2.7 2.9q-0.4 0.1-0.9 0.1-0.3 0-0.6 0c0.4 1.2 1.6 2.1 3.1 2.1-1.2 0.8-2.6 1.3-4.1 1.3q-0.4 0-0.8-0.1c1.5 0.9 3.2 1.4 5 1.4 6.1 0 9.4-4.6 9.4-8.6q0-0.2 0-0.4 0.9-0.7 1.6-1.6z")
+                a
+                    svg.svg2(xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 35 35" width="35" height="35")
+                        style .a2{fill:none;stroke:#fff;stroke-miterlimit:100;stroke-width:2}
+                        path(fill-rule="evenodd" class="a2" d="m17.5 0c9.7 0 17.5 7.8 17.5 17.5 0 9.7-7.8 17.5-17.5 17.5-9.7 0-17.5-7.8-17.5-17.5 0-9.7 7.8-17.5 17.5-17.5z")
+                        path(class="b2" d="m26 12.4q-0.9 0.4-1.9 0.5c0.7-0.4 1.2-1 1.5-1.7q-1 0.6-2.1 0.8c-0.6-0.6-1.5-1-2.4-1-1.8 0-3.3 1.4-3.3 3q0 0.4 0.1 0.7c-2.7-0.1-5.2-1.3-6.8-3.1q-0.4 0.6-0.4 1.5c0 1 0.5 2 1.4 2.5q-0.8 0-1.5-0.4 0 0 0 0.1c0 1.4 1.2 2.6 2.7 2.9q-0.4 0.1-0.9 0.1-0.3 0-0.6 0c0.4 1.2 1.6 2.1 3.1 2.1-1.2 0.8-2.6 1.3-4.1 1.3q-0.4 0-0.8-0.1c1.5 0.9 3.2 1.4 5 1.4 6.1 0 9.4-4.6 9.4-8.6q0-0.2 0-0.4 0.9-0.7 1.6-1.6z")       
+                a
+                    svg.svg3(xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 35 35" width="35" height="35")
+                        style .a3{fill:none;stroke:#fff;stroke-miterlimit:100;stroke-width:2}
+                        path(fill-rule="evenodd" class="a3" d="m17.5 0c9.7 0 17.5 7.8 17.5 17.5 0 9.7-7.8 17.5-17.5 17.5-9.7 0-17.5-7.8-17.5-17.5 0-9.7 7.8-17.5 17.5-17.5z")
+                        path(class="b3" d="m26 12.4q-0.9 0.4-1.9 0.5c0.7-0.4 1.2-1 1.5-1.7q-1 0.6-2.1 0.8c-0.6-0.6-1.5-1-2.4-1-1.8 0-3.3 1.4-3.3 3q0 0.4 0.1 0.7c-2.7-0.1-5.2-1.3-6.8-3.1q-0.4 0.6-0.4 1.5c0 1 0.5 2 1.4 2.5q-0.8 0-1.5-0.4 0 0 0 0.1c0 1.4 1.2 2.6 2.7 2.9q-0.4 0.1-0.9 0.1-0.3 0-0.6 0c0.4 1.2 1.6 2.1 3.1 2.1-1.2 0.8-2.6 1.3-4.1 1.3q-0.4 0-0.8-0.1c1.5 0.9 3.2 1.4 5 1.4 6.1 0 9.4-4.6 9.4-8.6q0-0.2 0-0.4 0.9-0.7 1.6-1.6z")       
+                a
+                    svg.svg4(xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 35 35" width="35" height="35")
+                        style .a4{fill:none;stroke:#fff;stroke-miterlimit:100;stroke-width:2}
+                        path(fill-rule="evenodd" class="a4" d="m17.5 0c9.7 0 17.5 7.8 17.5 17.5 0 9.7-7.8 17.5-17.5 17.5-9.7 0-17.5-7.8-17.5-17.5 0-9.7 7.8-17.5 17.5-17.5z")
+                        path(class="b4" d="m26 12.4q-0.9 0.4-1.9 0.5c0.7-0.4 1.2-1 1.5-1.7q-1 0.6-2.1 0.8c-0.6-0.6-1.5-1-2.4-1-1.8 0-3.3 1.4-3.3 3q0 0.4 0.1 0.7c-2.7-0.1-5.2-1.3-6.8-3.1q-0.4 0.6-0.4 1.5c0 1 0.5 2 1.4 2.5q-0.8 0-1.5-0.4 0 0 0 0.1c0 1.4 1.2 2.6 2.7 2.9q-0.4 0.1-0.9 0.1-0.3 0-0.6 0c0.4 1.2 1.6 2.1 3.1 2.1-1.2 0.8-2.6 1.3-4.1 1.3q-0.4 0-0.8-0.1c1.5 0.9 3.2 1.4 5 1.4 6.1 0 9.4-4.6 9.4-8.6q0-0.2 0-0.4 0.9-0.7 1.6-1.6z")              
             span.white_line
             p © 2015 STARTUP, DESIGNED BY SHAPEDTHEME
         script(type="module" src="/main.js")

@@ -103,6 +103,9 @@ a
     text-decoration: none
     cursor: pointer
 
+button
+    cursor: pointer
+
 h1
     font-size: 48rem
     padding-bottom: 20rem
@@ -157,7 +160,7 @@ h1
     left: 0
     z-index: 2
     a
-        font-size: 14rem
+        font-size: 18rem
         line-height: 1.7em
         transition: .5s
         &:hover
@@ -169,9 +172,9 @@ h1
         width: 70%
         height: 100%
         background-color: #992616
-        padding: 10rem
+        padding: 30rem
         a
-            font-size: 20rem
+            font-size: 40rem
 
 .open
     display: flex
@@ -184,11 +187,9 @@ h1
     display: none
     position: fixed
     top: 10rem
-    left: 57%
+    left: 70%
     width: 45rem
     height: 45rem
-    +media(450)
-        left: 63%
 
 .line_b
     width: 40rem
@@ -201,7 +202,7 @@ h1
     flex-direction: column
     align-items: center
     p 
-        font-size: 16rem
+        font-size: 20rem
         line-height: 1.5em
 
 .favorite
@@ -263,10 +264,10 @@ h1
             align-items: center
             h3
                 padding: 25rem 0 20rem
-                font-size: 14rem
+                font-size: 18rem
                 line-height: 1.7em
             p
-                font-size: 14rem
+                font-size: 18rem
                 line-height: 1.7em
                 font-family: "Roboto Slab"
                 text-align: center
@@ -303,29 +304,15 @@ h1
                 flex-direction: column
             p
                 width: 100%
-                font-size: 14rem
+                font-size: 18rem
                 line-height: 1.7em
                 font-family: "Roboto Slab"
         .men
-            display: grid
-            grid-template-columns: repeat(4, 1fr)
-            grid-template-areas: "man1 man2 man3 man4"
-            gap: 28rem
-            +media-max(1200)
-                grid-template-columns: repeat(2, 1fr)
-                grid-template-areas: "man1 man2" "man3 man4"
-            +media-max(600)
-                grid-template-columns: repeat(1, 1fr)
-                grid-template-areas: "man1" "man2" "man3" "man4"
-            .man1
-                grid-area: man1
-            .man2
-                grid-area: man2
-            .man3
-                grid-area: man3
-            .man4
-                grid-area: man4
+            width: 100%
+            display: flex
+            justify-content: space-between
             div
+                width: calc((90%) / 4)
                 position: relative
                 display: flex
                 flex-direction: column
@@ -341,7 +328,10 @@ h1
                     .in
                         display: block
                 picture
+                    width: 100%
                     padding-bottom: 6px
+                    img
+                        width: 100%
                 a
                     position: absolute
                 .facebook
@@ -381,10 +371,10 @@ h1
                     &:hover
                         background-color: #c0301c
                 .name
-                    font-size: 14rem
+                    font-size: 16rem
                     line-height: 1.7em
                 .work
-                    font-size: 13rem
+                    font-size: 16rem
                     line-height: 1.8em
                     font-family: "Roboto Slab"
 
@@ -416,16 +406,17 @@ h1
             gap: 15px
     .examples
         padding-top: 40rem
-        display: grid
-        grid-template-columns: repeat(3, 1fr)
-        +media-max(1200)
-            grid-template-columns: repeat(2, 1fr)
-        +media-max(790)
-            grid-template-columns: repeat(1, 1fr)
+        display: flex
+        flex-wrap: wrap
         gap: 30rem
         .picture
             position: relative
             overflow: hidden
+            width: calc((100% - 60rem) / 3)
+            +media-max(1000)
+                width: calc((100% - 30rem) / 2)
+            +media-max(700)
+                width: 100%
             &:hover
                 .red  
                     display: block
@@ -489,17 +480,13 @@ h1
                     transform: rotate(-45deg)
                     border-bottom: 1rem #c0301c solid
                     border-right: 1rem #c0301c solid
-            +media-max(500)
             picture
                 display: block
-                width: 90%
+                width: 100%
                 margin: 0 auto
                 img
                     width: 100%
                     height: auto
-            .red
-                width: 90%
-                left: 5%
 
 .offer
     padding: 100rem 0
@@ -550,14 +537,11 @@ h1
     display: flex
     flex-direction: row
     gap: 40rem
-    +media-max(960)
+    +media-max(900)
         flex-direction: column
         picture
-            margin: 0 auto
-    +media-max(500)
-        picture
             display: block
-            width: 90%
+            width: 100%
             margin: 0 auto
             img
                 width: 100%
@@ -609,12 +593,12 @@ h1
 
 .post_des
     padding: 23rem 0 34rem
-    font-size: 14rem
+    font-size: 18rem
     line-height: 1.7em
     font-family: "Roboto Slab"
 
 .read
-    font-size: 13rem
+    font-size: 15rem
     letter-spacing: 1rem
     line-height: 1.8em
     font-weight: bold
@@ -628,30 +612,12 @@ h1
     padding: 100rem 0
     background-color: #f8f8f8
     .pictures
-        display: grid
-        grid-template-columns: repeat(5, 1fr)
-        grid-template-areas: "img1 img2 img3 img4 img5"
-        row-gap: 20rem
-        justify-content: center
-        justify-items: center
+        display: flex
+        justify-content: space-between
         align-items: center
         padding-bottom: 70rem
-        .img1
-            grid-area: img1
-        .img2
-            grid-area: img2
-        .img3
-            grid-area: img3
-        .img4
-            grid-area: img4
-        .img5
-            grid-area: img5
-        +media-max(930)
-            grid-template-columns: repeat(6, 1fr)
-            grid-template-areas: "img1 img1 img2 img2 img3 img3" "img4 img4 img4 img5 img5 img5"
-        +media-max(550)
-            grid-template-columns: repeat(2, 1fr)
-            grid-template-areas: "img1 img2" "img3 img4" "img5 img5"
+        img
+            width: calc((70%) / 5)
     p
         display: flex
         justify-content: center
@@ -670,27 +636,34 @@ h1
 .connect
     display: flex
     flex-direction: column
-    align-items: center
     padding: 100rem 0
     color: #555555
-    h2
-        font-size: 20rem
-        line-height: 1.2em
-    .grey_line
-        margin: 28rem 0
-    .des 
-        font-size: 16rem
-        line-height: 1.5em
-        font-weight: 400
-        font-family: "Roboto Slab"
+    .a-items
+        display: flex
+        flex-direction: column
+        align-items: center
+        h2
+            font-size: 20rem
+            line-height: 1.2em
+        .grey_line
+            margin: 28rem 0
+        .des 
+            font-size: 16rem
+            line-height: 1.5em
+            font-weight: 400
+            font-family: "Roboto Slab"
     .flex
         display: flex
-        gap: 160rem
+        justify-content: space-between
         padding-top: 70rem
-        +media-max(900)
-            gap: 90rem
+        +media(700)
+            .information
+                width: 40%
+            .bot
+                width: 60%
         +media-max(700)
             flex-direction: column
+            gap: 30px
         .information
             display: grid
             flex-direction: column
@@ -707,10 +680,10 @@ h1
                     padding-top: 3rem
                 h3
                     padding-bottom: 15rem
-                    font-size: 14rem
+                    font-size: 20rem
                     font-weight: 500
                 p
-                    font-size: 12rem
+                    font-size: 16rem
                     line-height: 1.7em
                     font-weight: 400
                     font-family: "Roboto Slab"
@@ -723,7 +696,7 @@ h1
                 box-sizing: border-box
                 width: 100%
                 padding: 10rem
-                font-size: 12rem
+                font-size: 16rem
                 line-height: 1.7em
                 font-weight: 400
                 font-family: "Roboto Slab"
@@ -739,7 +712,7 @@ h1
             width: 100%
             min-height: 100rem
             padding: 10rem
-            font-size: 12rem
+            font-size: 16rem
             line-height: 1.7em
             font-weight: 400
             font-family: "Roboto Slab"
@@ -755,7 +728,7 @@ h1
             padding-top: 20rem
             button
                 padding: 10rem 35rem
-                font-size: 12rem
+                font-size: 16rem
                 letter-spacing: 1rem
                 line-height: 1.7em
                 font-family: "Roboto Slab"
@@ -769,7 +742,7 @@ h1
             p
                 display: flex
                 align-items: center
-                font-size: 12rem
+                font-size: 16rem
                 font-weight: 400
                 line-height: 1.7em
                 font-family: "Roboto Slab"
