@@ -73,7 +73,7 @@ mixin info(oneSection, mainClass="typography")
 
 mixin 4men(oneMan, order="man1")
     div(class=order)
-        picture.d-block
+        picture
             img(src=oneMan.img, alt=oneMan.alt)
         a.facebook(href=oneMan.hrefF) 
             img(src="../assets/images/facebook.svg", alt="")
@@ -150,7 +150,7 @@ mixin project(oneProject)
         p.caption #{oneProject.caption}
         p.type #{oneProject.type}
         a.view(href=oneProject.href)
-            p VIEW
+            p ADD TO CARD
             span
         picture 
             img(src=oneProject.img, alt=oneProject.title)

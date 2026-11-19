@@ -61,6 +61,18 @@
     margin: 0
     padding: 0
 
+html
+    font-size: .8px
+    +media(768)
+        html
+            font-size: 0.93px
+    +media(1440)
+        html
+            font-size: 1px
+    +media(2200)
+        html
+            font-size: 1.5px
+
 body
     font-family: Montserrat
 
@@ -74,11 +86,11 @@ footer
     display: flex
     flex-direction: column
     align-items: center
-    gap: 25px
-    padding: 100px 0
+    gap: 25rem
+    padding: 100rem 0
     background-color: #c0301c
     p
-        font-size: 12px
+        font-size: 12rem
         line-height: 1.7em
         color: #fff
         font-weight: 400
@@ -92,8 +104,9 @@ a
     cursor: pointer
 
 h1
-    font-size: 48px
-    padding-bottom: 20px
+    font-size: 48rem
+    padding-bottom: 20rem
+    text-align: center
 
 .wrapper
     margin: 0 auto
@@ -115,6 +128,9 @@ h1
     display: flex
     justify-content: center
 
+.des
+    text-align: center
+
 .black
     display: none
     position: fixed
@@ -127,25 +143,25 @@ h1
     z-index: 1
 
 .navigation
-    padding-top: 40px
+    padding-top: 40rem
 
 .logo
-    font-size: 24px
+    font-size: 24rem
     line-height: 1.5em
     font-weight: bold
 
 .menu
-    gap: 30px
+    gap: 30rem
     position: fixed
     top: 0
     left: 0
     z-index: 2
     a
-        font-size: 14px
+        font-size: 14rem
         line-height: 1.7em
         transition: .5s
         &:hover
-            filter: drop-shadow(0 0 5px #fff)
+            filter: drop-shadow(0 0 5rem #fff)
     +media(800)
         position: static
     +media-max(800)
@@ -153,72 +169,72 @@ h1
         width: 70%
         height: 100%
         background-color: #992616
-        padding: 10px
+        padding: 10rem
         a
-            font-size: 20px
+            font-size: 20rem
 
 .open
     display: flex
     flex-direction: column
-    gap: 7px
+    gap: 7rem
     +media(800)
         display: none
 
 .cancel_popup
     display: none
     position: fixed
-    top: 10px
+    top: 10rem
     left: 57%
-    width: 45px
-    height: 45px
+    width: 45rem
+    height: 45rem
     +media(450)
         left: 63%
 
 .line_b
-    width: 40px
-    height: 4px
+    width: 40rem
+    height: 4rem
     background-color: #fff
 
 .main_container
-    padding: 260px 0 260px 
+    padding: 260rem 0 260rem
     display: flex
     flex-direction: column
     align-items: center
     p 
-        font-size: 16px
+        font-size: 16rem
         line-height: 1.5em
 
 .favorite
-    padding-bottom: 45px
+    padding-bottom: 45rem
 
 .border_w
-    font-size: 16px
+    font-size: 16rem
     line-height: 1.5em
     font-weight: 500
-    max-width: 115px
-    padding: 11.5px 32px
-    border: 2px solid #fff
-    border-radius: 2px
+    max-width: 115rem
+    padding: 11.5rem 32rem
+    border: 2rem solid #fff
+    border-radius: 2rem
     transition: .5s
     &:hover
-        filter: drop-shadow(0 0 5px #fff)
+        filter: drop-shadow(0 0 5rem #fff)
 
 .services
-    padding: 95px 0
+    padding: 95rem 0
     color: #555
     display: flex
     flex-direction: column
     align-items: center
     h2
-        padding-bottom: 25px
-        font-size: 20px
+        padding-bottom: 25rem
+        font-size: 20rem
     .des
-        padding-top: 25px
-        font-size: 16px
+        padding-top: 25rem
+        font-size: 16rem
         line-height: 1.5em
         font-family: "Roboto Slab"
     .col_3
-        padding-top: 70px
+        padding-top: 70rem
         display: grid
         grid-template-columns: repeat(1, 1fr)
         grid-template-areas: "box1" "box2" "box3"
@@ -228,7 +244,7 @@ h1
         +media(1000)
             grid-template-columns: repeat(3, 1fr)
             grid-template-areas: "box1 box2 box3"
-        gap: 45px
+        gap: 45rem
         .typography
             grid-area: box1 
         .code
@@ -246,22 +262,22 @@ h1
             flex-direction: column
             align-items: center
             h3
-                padding: 25px 0 20px
-                font-size: 14px
+                padding: 25rem 0 20rem
+                font-size: 14rem
                 line-height: 1.7em
             p
-                font-size: 14px
+                font-size: 14rem
                 line-height: 1.7em
                 font-family: "Roboto Slab"
                 text-align: center
 
 .grey_line
-    width: 50px
-    height: 3px
+    width: 50rem
+    height: 3rem
     background-color: #555
 
 .aboutUs
-    padding: 100px 0
+    padding: 100rem 0
     color: #555
     background-color: #f8f8f8
     .wrapper
@@ -269,32 +285,32 @@ h1
         flex-direction: column
         align-items: center
         h2
-            padding-bottom: 28px
-            font-size: 20px
+            padding-bottom: 28rem
+            font-size: 20rem
             line-height: 1.2em
             font-family: "Montserrat"
         .des
-            padding-top: 28px
-            font-size: 16px
+            padding-top: 28rem
+            font-size: 16rem
             line-height: 1.5em
             font-family: "Roboto Slab"
         .texts
-            padding: 70px 0 64px
+            padding: 70rem 0 64rem
             display: flex
             flex-direction: row
-            gap: 30px
+            gap: 30rem
             +media-max(1000)
                 flex-direction: column
             p
                 width: 100%
-                font-size: 14px
+                font-size: 14rem
                 line-height: 1.7em
                 font-family: "Roboto Slab"
         .men
             display: grid
             grid-template-columns: repeat(4, 1fr)
             grid-template-areas: "man1 man2 man3 man4"
-            gap: 28px
+            gap: 28rem
             +media-max(1200)
                 grid-template-columns: repeat(2, 1fr)
                 grid-template-areas: "man1 man2" "man3 man4"
@@ -314,7 +330,7 @@ h1
                 display: flex
                 flex-direction: column
                 align-items: center
-                gap: 7px
+                gap: 7rem
                 &:hover
                     .facebook
                         display: block
@@ -330,8 +346,8 @@ h1
                     position: absolute
                 .facebook
                     display: none
-                    padding: 4.5px 10px
-                    bottom: 100px
+                    padding: 4.5rem 10rem
+                    bottom: 100rem
                     left: 32%
                     transform: translate(-32%)
                     transition: .5s
@@ -339,8 +355,8 @@ h1
                         background-color: #c0301c
                 .twitter
                     display: none
-                    padding: 5px 6px
-                    bottom: 100px
+                    padding: 5rem 6rem
+                    bottom: 100rem
                     left: 44%
                     transform: translate(-44%)
                     transition: .5s
@@ -348,8 +364,8 @@ h1
                         background-color: #c0301c
                 .google
                     display: none
-                    padding: 4.5px 6px
-                    bottom: 100px
+                    padding: 4.5rem 6rem
+                    bottom: 100rem
                     left: 56%
                     transform: translate(-56%)
                     transition: .5s
@@ -357,56 +373,59 @@ h1
                         background-color: #c0301c
                 .in
                     display: none
-                    padding: 5px 7px
-                    bottom: 100px
+                    padding: 5rem 7rem
+                    bottom: 100rem
                     left: 68%
                     transform: translate(-68%)
                     transition: .5s
                     &:hover
                         background-color: #c0301c
                 .name
-                    font-size: 14px
+                    font-size: 14rem
                     line-height: 1.7em
                 .work
-                    font-size: 13px
+                    font-size: 13rem
                     line-height: 1.8em
                     font-family: "Roboto Slab"
 
 .works
-    padding: 99px 0
+    padding: 99rem 0
     display: flex
     flex-direction: column
     align-items: center
-    gap: 28px
+    gap: 28rem
     h2
-        font-size: 20px
+        font-size: 20rem
         line-height: 1.2em
         color: #555555
     ul
         display: flex
         flex-direction: row
-        gap: 25px
+        gap: 25rem
         li
             &:hover
                 a
                     color: #c0301c
         a
             color: #555555
-            font-size: 16px
+            font-size: 16rem
             line-height: 1.5em
             font-family: "Roboto Slab"
             transition: .5s
+        +media-max(350)
+            gap: 15px
     .examples
-        padding-top: 40px
+        padding-top: 40rem
         display: grid
         grid-template-columns: repeat(3, 1fr)
         +media-max(1200)
             grid-template-columns: repeat(2, 1fr)
         +media-max(790)
             grid-template-columns: repeat(1, 1fr)
-        gap: 30px
+        gap: 30rem
         .picture
             position: relative
+            overflow: hidden
             &:hover
                 .red  
                     display: block
@@ -416,63 +435,74 @@ h1
                     display: block
                 .view
                     display: block
-        .red
-            display: none
-            position: absolute
-            top: 0
-            left: 0
-            width: 100%
-            height: 100%
-            background-color: rgba(192, 48, 28, .5)
-        .caption
-            display: none
-            position: absolute
-            top: 37%
-            left: 50%
-            transform: translate(-50%, -50%)
-            font-size: 18px
-            line-height: 1.3em
-            font-weight: 500
-            color: #fff
-        .type
-            position: absolute
-            top: 46%
-            left: 50%
-            transform: translate(-50%, -50%)
-            display: none
-            font-size: 12px
-            line-height: 2em
-            color: #fff
-            font-family: "Roboto Slab"
-        .view
-            position: absolute
-            top: 60%
-            left: 50%
-            transform: translate(-50%, -50%)
-            display: none
-            padding: 19px 50px
-            background-color: #fff
-            p
+            .red
+                display: none
                 position: absolute
-                top: 22%
-                left: 20%
-                font-size: 14px
-                letter-spacing: 1px
-                line-height: 1.7em
-                color: #c0301c
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                background-color: rgba(192, 48, 28, .5)
+            .caption
+                display: none
+                position: absolute
+                top: 37%
+                left: 50%
+                transform: translate(-50%, -50%)
+                font-size: 18rem
+                line-height: 1.3em
+                font-weight: 500
+                color: #fff
+            .type
+                position: absolute
+                top: 46%
+                left: 50%
+                transform: translate(-50%, -50%)
+                display: none
+                font-size: 12rem
+                line-height: 2em
+                color: #fff
                 font-family: "Roboto Slab"
-            span
+            .view
                 position: absolute
-                top: 42%
-                left: 75%
-                width: 5px
-                height: 5px
-                transform: rotate(-45deg)
-                border-bottom: 1px #c0301c solid
-                border-right: 1px #c0301c solid
+                top: 60%
+                left: 50%
+                transform: translate(-50%, -50%)
+                display: none
+                padding: 19rem 70rem
+                background-color: #fff
+                p
+                    position: absolute
+                    top: 22%
+                    left: 10%
+                    font-size: 14rem
+                    letter-spacing: 1rem
+                    line-height: 1.7em
+                    color: #c0301c
+                    font-family: "Roboto Slab"
+                span
+                    position: absolute
+                    top: 42%
+                    right: 10%
+                    width: 5rem
+                    height: 5rem
+                    transform: rotate(-45deg)
+                    border-bottom: 1rem #c0301c solid
+                    border-right: 1rem #c0301c solid
+            +media-max(500)
+            picture
+                display: block
+                width: 90%
+                margin: 0 auto
+                img
+                    width: 100%
+                    height: auto
+            .red
+                width: 90%
+                left: 5%
 
 .offer
-    padding: 100px 0
+    padding: 100rem 0
     display: flex
     flex-direction: column
     align-items: center
@@ -480,58 +510,58 @@ h1
     color: #ffffff
     font-family: "Roboto Slab"
     h2
-        padding-bottom: 50px
-        font-size: 30px
+        padding-bottom: 50rem
+        font-size: 30rem
         line-height: 1.47em
         font-weight: 400
         text-align: center
     a
-        padding: 2px 25px
-        font-size: 18px
+        padding: 2rem 25rem
+        font-size: 18rem
         line-height: 2.4em
         font-weight: 400
-        border: 2px solid #fff
-        border-radius: 2px
+        border: 2rem solid #fff
+        border-radius: 2rem
         transition: .5s
         &:hover
-            filter: drop-shadow(0 0 5px #fff)
+            filter: drop-shadow(0 0 5rem #fff)
 
 .posts
     .wrapper
-        padding: 95px 0
+        padding: 95rem 0
         display: flex
         flex-direction: column
         align-items: center
-        gap: 28px
+        gap: 28rem
         color: #555
         h2
-            font-size: 20px
+            font-size: 20rem
             line-height: 1.2em
         .des
-            font-size: 16px
+            font-size: 16rem
             line-height: 1.5em
             font-weight: 400
             font-family: "Roboto Slab"
 
 .cards
-    padding-top: 10px
+    padding-top: 10rem
 
 .blog
     display: flex
     flex-direction: row
-    gap: 40px
+    gap: 40rem
     +media-max(960)
         flex-direction: column
         picture
             margin: 0 auto
     +media-max(500)
         picture
-        display: block
-        width: 90%
-        margin: 0 auto
-        img
-            width: 100%
-            height: auto
+            display: block
+            width: 90%
+            margin: 0 auto
+            img
+                width: 100%
+                height: auto
     &:hover
         h3
             color: #c0301c
@@ -539,37 +569,37 @@ h1
             span
                 color: #c0301c
     h3
-        font-size: 16px
+        font-size: 16rem
         line-height: 1.5em
         transition: .5s
 
 .blog1
-    padding-bottom: 28px
-    border-bottom: 1px solid #ddd
+    padding-bottom: 28rem
+    border-bottom: 1rem solid #ddd
 
 .blog2
-    padding-top: 28px
+    padding-top: 28rem
 
 .location
     display: flex
     flex-direction: row
-    gap: 28px
+    gap: 28rem
 
 .left
     box-sizing: border-box
-    padding: 10px 12px
-    max-height: 64px
-    font-size: 14px
-    letter-spacing: 2px
+    padding: 10rem 12rem
+    max-height: 64rem
+    font-size: 14rem
+    letter-spacing: 2rem
     font-weight: bold
     color: #777
-    border: 2px solid #555
+    border: 2rem solid #555
     .num
-        font-size: 18px
+        font-size: 18rem
         text-align: center
 
 .author
-    font-size: 13px
+    font-size: 13rem
     line-height: 1.8em
     font-style: italic
     color: #777
@@ -578,14 +608,14 @@ h1
         transition: .5s
 
 .post_des
-    padding: 23px 0 34px
-    font-size: 14px
+    padding: 23rem 0 34rem
+    font-size: 14rem
     line-height: 1.7em
     font-family: "Roboto Slab"
 
 .read
-    font-size: 13px
-    letter-spacing: 1px
+    font-size: 13rem
+    letter-spacing: 1rem
     line-height: 1.8em
     font-weight: bold
     font-family: "Roboto Slab"
@@ -595,17 +625,17 @@ h1
         color: #c0301c
 
 .fonts
-    padding: 100px 0
+    padding: 100rem 0
     background-color: #f8f8f8
     .pictures
         display: grid
         grid-template-columns: repeat(5, 1fr)
         grid-template-areas: "img1 img2 img3 img4 img5"
-        row-gap: 20px
+        row-gap: 20rem
         justify-content: center
         justify-items: center
         align-items: center
-        padding-bottom: 70px
+        padding-bottom: 70rem
         .img1
             grid-area: img1
         .img2
@@ -625,45 +655,46 @@ h1
     p
         display: flex
         justify-content: center
-        font-size: 18px
+        text-align: center
+        font-size: 18rem
         line-height: 1.6em
         color: #555555
         font-weight: 100
         font-family: "Roboto Slab"
     .it
-        font-size: 16px
+        font-size: 16rem
         font-style: italic
     .author 
-        padding-top: 30px
+        padding-top: 30rem
 
 .connect
     display: flex
     flex-direction: column
     align-items: center
-    padding: 100px 0
+    padding: 100rem 0
     color: #555555
     h2
-        font-size: 20px
+        font-size: 20rem
         line-height: 1.2em
     .grey_line
-        margin: 28px 0
+        margin: 28rem 0
     .des 
-        font-size: 16px
+        font-size: 16rem
         line-height: 1.5em
         font-weight: 400
         font-family: "Roboto Slab"
     .flex
         display: flex
-        gap: 160px
-        padding-top: 70px
+        gap: 160rem
+        padding-top: 70rem
         +media-max(900)
-            gap: 90px
+            gap: 90rem
         +media-max(700)
             flex-direction: column
         .information
             display: grid
             flex-direction: column
-            gap: 30px
+            gap: 30rem
             +media-max(700)
                 grid-template-columns: repeat(2, 1fr)
             +media-max(420)
@@ -671,32 +702,32 @@ h1
             .info
                 display: flex
                 align-items: start
-                gap: 15px
+                gap: 15rem
                 .is
-                    padding-top: 3px
+                    padding-top: 3rem
                 h3
-                    padding-bottom: 15px
-                    font-size: 14px
+                    padding-bottom: 15rem
+                    font-size: 14rem
                     font-weight: 500
                 p
-                    font-size: 12px
+                    font-size: 12rem
                     line-height: 1.7em
                     font-weight: 400
                     font-family: "Roboto Slab"
         .inputs
-            padding-bottom: 20px
+            padding-bottom: 20rem
             display: grid
             grid-template-columns: 1fr 1fr
-            gap: 20px
+            gap: 20rem
             input
                 box-sizing: border-box
                 width: 100%
-                padding: 10px
-                font-size: 12px
+                padding: 10rem
+                font-size: 12rem
                 line-height: 1.7em
                 font-weight: 400
                 font-family: "Roboto Slab"
-                border: 1px solid #121212
+                border: 1rem solid #121212
                 outline: none
                 transition: .5s
                 &:focus
@@ -706,31 +737,31 @@ h1
         textarea
             box-sizing: border-box
             width: 100%
-            min-height: 100px
-            padding: 10px
-            font-size: 12px
+            min-height: 100rem
+            padding: 10rem
+            font-size: 12rem
             line-height: 1.7em
             font-weight: 400
             font-family: "Roboto Slab"
             resize: none
-            border: 1px solid #121212
+            border: 1rem solid #121212
             outline: none
             transition: .5s
             &:focus
                 border-color: #c0301c
         .send
             display: flex
-            gap: 30px
-            padding-top: 20px
+            gap: 30rem
+            padding-top: 20rem
             button
-                padding: 10px 35px
-                font-size: 12px
-                letter-spacing: 1px
+                padding: 10rem 35rem
+                font-size: 12rem
+                letter-spacing: 1rem
                 line-height: 1.7em
                 font-family: "Roboto Slab"
                 color: #555555
                 background-color: #fff
-                border: 1px solid #555555
+                border: 1rem solid #555555
                 transition: .5s
                 &:hover
                     color: #c0301c
@@ -738,24 +769,24 @@ h1
             p
                 display: flex
                 align-items: center
-                font-size: 12px
+                font-size: 12rem
                 font-weight: 400
                 line-height: 1.7em
                 font-family: "Roboto Slab"
                 span
-                    padding-right: 5px
+                    padding-right: 5rem
                     color: #c0301c
             +media-max(450)
                 flex-direction: column
 
 .white_line
-    width: 50px
-    height: 3px
+    width: 50rem
+    height: 3rem
     background-color: #fff
 
 .images 
     display: flex
-    gap: 15px
+    gap: 15rem
 
 .svg1
     overflow: visible
@@ -764,7 +795,7 @@ h1
         transition: .5s
     &:hover
         .b1
-            filter: drop-shadow(0 0 8px #fff)
+            filter: drop-shadow(0 0 8rem #fff)
 
 .svg2
     overflow: visible
@@ -773,7 +804,7 @@ h1
         transition: .5s
     &:hover
         .b2
-            filter: drop-shadow(0 0 8px #fff)
+            filter: drop-shadow(0 0 8rem #fff)
 
 .svg3
     overflow: visible
@@ -782,7 +813,7 @@ h1
         transition: .5s
     &:hover
         .b3
-            filter: drop-shadow(0 0 8px #fff)
+            filter: drop-shadow(0 0 8rem #fff)
 
 .svg4
     overflow: visible
@@ -791,7 +822,7 @@ h1
         transition: .5s
     &:hover
         .b4
-            filter: drop-shadow(0 0 8px #fff)
+            filter: drop-shadow(0 0 8rem #fff)
 
 .di-none
     display: none
